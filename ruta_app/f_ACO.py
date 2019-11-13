@@ -1,5 +1,6 @@
 import numpy as np 
 import random as ran 
+import os
 
 ##--- Lee y recupera la informacion de las 
 ##---------conexiones y los nodos 
@@ -78,15 +79,18 @@ def contar_guardar_ruta(rutas_b, conteo_b, ruta):
 
 def ACO(v_1, v_2):
 
-	ruta1 = "/home/chris/Escritorio/hormiga python/LM.aco";
+	#ruta1 = "/home/chris/Escritorio/hormiga python/LM.aco";
+	ruta1 = os.path.abspath('data_ACO/LM.aco')
 	data1 = openFile(ruta1)
 	conexiones = formatC(data1)
 
-	ruta2 = "/home/chris/Escritorio/hormiga python/d1.aco";
+	#ruta2 = "/home/chris/Escritorio/hormiga python/d1.aco";
+	ruta2 = os.path.abspath('data_ACO/d1.aco')
 	data2 = openFile(ruta2)
 	d = formatD(data2)
 
-	ruta3 = "/home/chris/Escritorio/hormiga python/v_distancias.aco"
+	#ruta3 = "/home/chris/Escritorio/hormiga python/v_distancias.aco"
+	ruta3 = os.path.abspath('data_ACO/v_distancias.aco')
 	data3 = openFile(ruta3)
 	v_distancia = formatA(data3)
 

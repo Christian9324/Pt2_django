@@ -9,6 +9,7 @@ from django.http import HttpResponseRedirect
 from rest_framework.renderers import JSONRenderer
 
 import io
+import os
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_agg import FigureCanvasAgg
 
@@ -19,6 +20,7 @@ from ruta_app.models import Rutas
 from ruta_app.serializers import RutasGetSerializer, RutasSetSerializer
 
 import json
+from data_ACO import *
 
 def index(request):
 
@@ -87,11 +89,13 @@ def pag(request):
 
 def plot(request):
 
-    ruta1 = "/home/chris/Escritorio/hormiga python/LM.aco";
+    #ruta1 = "/home/chris/Escritorio/hormiga python/LM.aco";
+    ruta1 = os.path.abspath('data_ACO/LM.aco')
     data1 = aco_f.openFile(ruta1)
     conexiones = aco_f.formatC(data1)
 
-    ruta2 = "/home/chris/Escritorio/hormiga python/d1.aco";
+    #ruta2 = "/home/chris/Escritorio/hormiga python/d1.aco";
+    ruta2 = os.path.abspath('data_ACO/d1.aco')
     data2 = aco_f.openFile(ruta2)
     d = aco_f.formatD(data2)
     # Creamos los datos para representar en el gráfico
@@ -108,8 +112,8 @@ def plot(request):
     ax = f.add_subplot(111)
 
     for g in range(nodos):
-        ax.plot(d[0][g],d[1][g], marker='o', linestyle=':', color='b')
-        ax.text(d[0][g]-0.004,d[1][g]+0.001, ''+str(g+1))
+    	ax.plot(d[0][g],d[1][g], marker='o', linestyle=':', color='b')
+    	ax.text(d[0][g]-0.003,d[1][g]+0.001, ''+str(g+1), color='b')
 
     for coor in conexiones:
     	p1 = coor[0]
