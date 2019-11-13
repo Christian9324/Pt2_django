@@ -1,0 +1,11 @@
+mysqlclient
+django
+djangorestframework
+markdown
+django-filter
+pillow
+celery
+pillow
+anyjson
+numpy
+matplotlib

@@ -1,0 +1,33 @@
+<html>
+	<head> 
+		<title> Rutas en Django con ACO</title>
+	</head>
+<body>
+
+	<div id="contenedor">
+    	<div style="height: 1200px; width: 720px; float: left;">
+    		<li>
+    			<img src="/plot/" width="710px" /> 
+    		</li> 
+    	</div>
+
+    	<div style="height: 550px; width: 400px; float: left;">
+    		<P>.</P>
+    		<P>.</P>
+    		<p><input type="text" name="Orig" value="1"><br></p>
+    		
+    		<form method="POST">{% csrf_token %}
+        		{{ form.as_p }}
+        		<button type="submit" class="save btn btn-default" value="1">Calcular</button>
+    		</form>
+
+
+
+
+    	</div>
+	</div>
+
+    <p>Hi there!</p>
+    <p>It works!</p>
+</body>
+</html>
