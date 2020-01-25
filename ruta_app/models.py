@@ -29,3 +29,13 @@ class rutasProcesar(models.Model):
 
 	def __str__(self):
 		return  "%d, %s, %s"%(self.idProcesar, self.estacionInicioP, self.estacionDestinoP)
+
+
+class Usuario(models.Model):
+	idUsuario =  models.AutoField(primary_key=True)
+	nickname = models.CharField(max_length = 150)
+	correo = models.CharField(max_length = 254)
+	password = models.CharField(max_length = 128)
+
+	def __str__(self):
+		return  "%d, %s"%(self.idUsuario, self.nickname)

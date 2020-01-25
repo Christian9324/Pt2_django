@@ -4,6 +4,8 @@ from .forms import sumaForm, ACOForm
 
 from . import f_ACO as aco_f
 
+from django.contrib.auth.hashers import make_password, check_password
+
 from .forms import ACOForm
 from django.http import HttpResponseRedirect
 from rest_framework.renderers import JSONRenderer
@@ -16,8 +18,8 @@ from matplotlib.backends.backend_agg import FigureCanvasAgg
 from django.views.decorators.csrf import csrf_exempt
 from rest_framework.parsers import JSONParser
 from django.http import JsonResponse
-from ruta_app.models import Rutas
-from ruta_app.serializers import RutasGetSerializer, RutasSetSerializer
+from ruta_app.models import Rutas, Usuario
+from ruta_app.serializers import RutasGetSerializer, RutasSetSerializer, UserGetSerializer, UserSetSerializer
 
 import json
 from data_ACO import *
@@ -38,6 +40,73 @@ def index(request):
    		form = ACOForm()
 
 	return render(request, 'ruta_app/index.html', {'form' : form})
+
+
+
+@csrf_exempt
+def login_user(request):
+
+    if request.method == 'POST':
+        datos_recibidos = JSONParser().parse(request)
+        datos_serializados = UserGetSerializer(data=datos_recibidos)
+        if datos_serializados.is_valid():
+            datos = datos_serializados.data
+            usuario_info = datos.get('nickname')
+            pass_info = datos.get('password')
+
+            if(Usuario.objects.filter(nickname = usuario_info).exists()):
+
+                datos_usuario = Usuario.objects.get(nickname = usuario_info)
+
+                if(check_password(pass_info, datos_usuario.password)):
+                    nuevo_serializer = {'nickname': 'ok', 'password': 'ok'}
+                    serializer_datos = UserGetSerializer(nuevo_serializer)
+                    return JsonResponse(serializer_datos.data, status = 200)
+
+                else:
+                    nuevo_serializer = {'nickname': 'error', 'password': 'error'}
+                    serializer_datos = UserGetSerializer(nuevo_serializer)
+                    return JsonResponse(serializer_datos.data, status = 300)
+
+            else:
+
+                nuevo_serializer = {'nickname': 'error', 'password': 'error'}
+                serializer_datos = UserGetSerializer(nuevo_serializer)
+                return JsonResponse(serializer_datos.data, status = 300)
+
+
+
+@csrf_exempt
+def create_user(request):
+
+    if request.method == 'POST':
+        datos_recibidos = JSONParser().parse(request)
+        datos_serializados = UserSetSerializer(data=datos_recibidos)
+        if datos_serializados.is_valid():
+            datos = datos_serializados.data
+            usuario_info = datos.get('nickname')
+            pass_info = datos.get('password')
+            correo1 = datos.get('correo')
+            pass_info_cif = make_password(pass_info)
+
+            if (Usuario.objects.filter(nickname = usuario_info).exists()):
+
+                if (Usuario.objects.filter(correo = correo1).exists()):
+                    nuevo_serializer = {'nickname': 'error', 'password': 'ok', 'correo': 'error'}
+                    serializer_datos = UserSetSerializer(nuevo_serializer)
+                    return JsonResponse(serializer_datos.data, status = 302)
+
+                else:
+                    nuevo_serializer = {'nickname': 'error', 'password': 'ok', 'correo': 'ok'}
+                    serializer_datos = UserSetSerializer(nuevo_serializer)
+                    return JsonResponse(serializer_datos.data, status = 301)
+
+            else:
+                Usuario.objects.create(nickname = usuario_info, password = pass_info_cif, correo = correo1)
+                nuevo_serializer = {'nickname': usuario_info, 'password': 'ok', 'correo': 'ok'}
+                serializer_ruta = UserSetSerializer(nuevo_serializer)
+                return JsonResponse(serializer_ruta.data, status = 201)
+
 
 @csrf_exempt
 def rutas_info(request):
