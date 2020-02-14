@@ -1,0 +1,97 @@
+[2020-01-31 02:16:37,466: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2020-01-31 02:16:37,474: INFO/MainProcess] mingle: searching for neighbors
+[2020-01-31 02:16:38,495: INFO/MainProcess] mingle: all alone
+[2020-01-31 02:16:38,509: WARNING/MainProcess] /home/chris/Documentos/PT_app/union/entorno/lib/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2020-01-31 02:16:38,509: INFO/MainProcess] worker@chris-VPCSB45FL ready.
+[2020-01-31 02:19:49,483: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2020-01-31 02:19:49,491: INFO/MainProcess] mingle: searching for neighbors
+[2020-01-31 02:19:50,512: INFO/MainProcess] mingle: all alone
+[2020-01-31 02:19:50,529: WARNING/MainProcess] /home/chris/Documentos/PT_app/union/entorno/lib/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2020-01-31 02:19:50,529: INFO/MainProcess] worker@chris-VPCSB45FL ready.
+[2020-01-31 02:20:36,238: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2020-01-31 02:20:36,247: INFO/MainProcess] mingle: searching for neighbors
+[2020-01-31 02:20:37,268: INFO/MainProcess] mingle: all alone
+[2020-01-31 02:20:37,283: WARNING/MainProcess] /home/chris/Documentos/PT_app/union/entorno/lib/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2020-01-31 02:20:37,283: INFO/MainProcess] worker@chris-VPCSB45FL ready.
+[2020-01-31 02:21:42,507: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[7083f7ac-c207-4f9a-8f84-558ea324e99b]  
+[2020-01-31 02:23:01,148: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[7a6e7029-2e4e-4e92-98cf-39f6d95c5714]  
+[2020-01-31 02:24:12,776: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[698b4830-918f-42ca-a302-fad93d202b6b]  
+[2020-01-31 02:24:27,038: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[3f426f3b-f4a1-4f2a-8003-57b04a35b3c3]  
+[2020-01-31 02:25:29,503: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[de8f4f38-5cef-4c5a-a864-6ea146e3055a]  
+[2020-01-31 02:26:10,829: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[3896ade2-6013-4d6f-a47a-b2512d27d02d]  
+[2020-01-31 02:29:56,405: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[5e10aed3-6b8b-42bf-b939-b4c5aff04302]  
+[2020-01-31 02:30:15,000: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[e77c8a10-9862-4281-a8e5-06d27b42570d]  
+[2020-01-31 03:05:34,871: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[6edb5a83-8e74-4db0-a8c4-f62a626e5ec4]  
+[2020-01-31 03:08:56,287: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[c66fd8ce-f1d4-4b79-ba78-55dcf26d9044]  
+[2020-01-31 03:13:38,437: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[67cef333-bc5f-45ef-a972-4ace0ceba8d5]  
+[2020-01-31 03:17:42,849: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[c6063865-0c6e-47ee-8514-ec1388adf39d]  
+[2020-01-31 03:21:18,188: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[9bc86972-fc4f-4bb5-b59d-5b40ac5d2f6d]  
+[2020-01-31 03:23:39,499: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[8ef3edf6-0188-4357-867f-733eb1b97164]  
+[2020-01-31 03:27:23,847: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[757dcad8-d66d-4b57-8cfe-9d690bfde2e5]  
+[2020-01-31 03:37:53,720: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[1a57a0ca-6e0e-4666-8d4f-a93384bc90cc]  
+[2020-01-31 03:39:25,161: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[054eeea7-f6d1-4256-9b51-085e8d856d39]  
+[2020-01-31 03:43:22,622: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[e8224534-36df-45c4-afe6-e39ff57dbe2c]  
+[2020-01-31 03:44:44,896: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[6302f4ae-5592-410f-bde0-3d316cd01310]  
+[2020-01-31 03:45:04,476: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[b09b88a7-df38-45c9-8660-d126c6fd5f8d]  
+[2020-02-04 22:57:03,383: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2020-02-04 22:57:03,402: INFO/MainProcess] mingle: searching for neighbors
+[2020-02-04 22:57:04,423: INFO/MainProcess] mingle: all alone
+[2020-02-04 22:57:04,434: WARNING/MainProcess] /home/chris/Documentos/PT_app/union/entorno/lib/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2020-02-04 22:57:04,434: INFO/MainProcess] worker@chris-VPCSB45FL ready.
+[2020-02-04 22:58:35,127: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[cf76e6c8-3cbd-4184-938b-1cdafd5913ed]  
+[2020-02-04 23:02:05,090: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[4741f7e9-9458-46a4-b243-889436cac91a]  
+[2020-02-04 23:02:46,240: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[c0fe5b37-2c3f-491b-8d09-6e2c8489aad8]  
+[2020-02-04 23:03:04,913: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[5cbe7dec-217e-48bf-a699-27217acb0c3e]  
+[2020-02-04 23:04:01,504: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[731cc36f-9c0b-42c9-b1e6-398beb1a5256]  
+[2020-02-04 23:04:23,291: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[38665473-050e-42eb-8b7d-4ae2ef103683]  
+[2020-02-04 23:04:39,000: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[424b80c0-2c85-4bf0-b309-a3d18e0bb6a9]  
+[2020-02-04 23:05:40,545: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[0b033aa9-60d8-4f8c-b34b-23e7032ef5ac]  
+[2020-02-04 23:05:49,736: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[79776da4-2386-4049-856a-4ceab61a2c0f]  
+[2020-02-04 23:06:01,999: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[aadd6f15-8ab0-4fd0-aacc-7a4191f5423c]  
+[2020-02-04 23:06:16,740: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[8524d5da-ccba-4542-af2f-edd4e5d4d865]  
+[2020-02-05 01:07:35,127: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2020-02-05 01:07:35,142: INFO/MainProcess] mingle: searching for neighbors
+[2020-02-05 01:07:36,163: INFO/MainProcess] mingle: all alone
+[2020-02-05 01:07:36,174: WARNING/MainProcess] /home/chris/Documentos/PT_app/union/entorno/lib/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2020-02-05 01:07:36,174: INFO/MainProcess] worker@chris-VPCSB45FL ready.
+[2020-02-05 01:09:32,626: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[44dccec3-a212-45bc-80da-c75a2a055b83]  
+[2020-02-05 01:09:48,018: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[8fc70f64-438b-413b-ab2f-9639fe386d40]  
+[2020-02-05 01:22:17,138: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[c80646ca-b1be-46d7-b5df-592f30cfbe98]  
+[2020-02-05 01:22:26,215: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[7394dd20-9ab3-42c1-a278-ab653fb82ec7]  
+[2020-02-05 01:29:26,173: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[f8b76fa7-b53a-4a49-b03d-5d4f11204dcf]  
+[2020-02-05 01:33:15,813: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[8094c718-beed-45fd-b861-0ed2e3258923]  
+[2020-02-05 01:34:33,964: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[90b53ac2-3919-4f8b-a831-b94fbcbf5e74]  
+[2020-02-05 01:43:05,985: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[0cac9821-beee-4e46-96ab-85c01512141e]  
+[2020-02-05 01:44:12,208: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[4468c1e5-f3b9-4d16-9099-24311cabc73e]  
+[2020-02-05 01:44:22,979: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[e322c4fc-a95b-49d5-8e4b-6c599f3766d4]  
+[2020-02-05 01:45:30,613: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[b1a80db1-4a16-4207-b452-c0e0103c2263]  
+[2020-02-05 01:46:18,712: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[a6552694-a84c-4088-a418-d8db48b613a3]  
+[2020-02-05 01:48:02,001: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[67171251-24d1-4c36-9fa9-b8bf15db00bb]  
+[2020-02-05 01:48:16,693: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[4e2061f3-d14d-4857-abbe-124c24653427]  
+[2020-02-05 01:48:30,798: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[01c5f236-e092-4ac1-bdae-039b4ce0a846]  
+[2020-02-05 01:49:29,356: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[a28dc885-4c07-4c0f-a2b7-fb6b33e02901]  
+[2020-02-05 01:49:34,760: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[ddfa62cc-5009-4ca8-b206-f32e5a41ac31]  
+[2020-02-05 01:49:55,103: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[67541fe4-1b73-4cb2-bf52-8ad6f69c2820]  
+[2020-02-05 01:50:15,744: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[3ccf104e-2843-41e6-9685-2f7114fcd3f6]  
+[2020-02-05 01:50:46,676: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[9585b25f-f18a-48b1-9fa9-fd494c372fed]  
+[2020-02-05 01:51:23,076: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[b8072b8d-3965-4380-91a2-9c8f16c69e77]  
+[2020-02-05 01:52:24,728: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[4c8ea5ad-4b4f-49b9-91ca-360fb89aaa09]  
+[2020-02-05 21:25:35,053: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2020-02-05 21:25:35,114: INFO/MainProcess] mingle: searching for neighbors
+[2020-02-05 21:25:36,209: INFO/MainProcess] mingle: all alone
+[2020-02-05 21:25:36,221: WARNING/MainProcess] /home/chris/Documentos/PT_app/union/entorno/lib/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2020-02-05 21:25:36,221: INFO/MainProcess] worker@chris-VPCSB45FL ready.
+[2020-02-13 16:57:20,877: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2020-02-13 16:57:20,887: INFO/MainProcess] mingle: searching for neighbors
+[2020-02-13 16:57:21,910: INFO/MainProcess] mingle: all alone
+[2020-02-13 16:57:21,966: WARNING/MainProcess] /home/chris/Documentos/PT_app/union/entorno/lib/python3.6/site-packages/celery/fixups/django.py:202: UserWarning: Using settings.DEBUG leads to a memory leak, never use this setting in production environments!
+  warnings.warn('Using settings.DEBUG leads to a memory leak, never '
+[2020-02-13 16:57:21,966: INFO/MainProcess] worker@chris-VPCSB45FL ready.
+[2020-02-14 02:17:34,874: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[f5dab41d-228f-4300-ba07-b2ef610ab425]  
+[2020-02-14 02:17:45,674: INFO/MainProcess] Received task: ruta_app.tasks.prueba_FACO[98dedcff-2549-41dc-a307-16cbd3584744]  

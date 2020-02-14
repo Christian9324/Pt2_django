@@ -66,13 +66,13 @@ def login_user(request):
                 else:
                     nuevo_serializer = {'nickname': 'error', 'password': 'error'}
                     serializer_datos = UserGetSerializer(nuevo_serializer)
-                    return JsonResponse(serializer_datos.data, status = 300)
+                    return JsonResponse(serializer_datos.data, status = 200)
 
             else:
 
                 nuevo_serializer = {'nickname': 'error', 'password': 'error'}
                 serializer_datos = UserGetSerializer(nuevo_serializer)
-                return JsonResponse(serializer_datos.data, status = 300)
+                return JsonResponse(serializer_datos.data, status = 200)
 
 
 
@@ -94,18 +94,18 @@ def create_user(request):
                 if (Usuario.objects.filter(correo = correo1).exists()):
                     nuevo_serializer = {'nickname': 'error', 'password': 'ok', 'correo': 'error'}
                     serializer_datos = UserSetSerializer(nuevo_serializer)
-                    return JsonResponse(serializer_datos.data, status = 302)
+                    return JsonResponse(serializer_datos.data, status = 200)
 
                 else:
                     nuevo_serializer = {'nickname': 'error', 'password': 'ok', 'correo': 'ok'}
                     serializer_datos = UserSetSerializer(nuevo_serializer)
-                    return JsonResponse(serializer_datos.data, status = 301)
+                    return JsonResponse(serializer_datos.data, status = 200)
 
             else:
                 Usuario.objects.create(nickname = usuario_info, password = pass_info_cif, correo = correo1)
                 nuevo_serializer = {'nickname': usuario_info, 'password': 'ok', 'correo': 'ok'}
                 serializer_ruta = UserSetSerializer(nuevo_serializer)
-                return JsonResponse(serializer_ruta.data, status = 201)
+                return JsonResponse(serializer_ruta.data, status = 200)
 
 
 @csrf_exempt
